@@ -1,3 +1,26 @@
-= PdfRenderer
+= RRPDF 
+
+== PDF Renderer for Rails.
+
+Simple enough, this gem lets you render PDFs out of your views.
+
+To install this gem, add the following line to your Gemfile:
+
+gem 'rrpdf', :git => git://github.com/eLobato/RRPDF.git
+
+In order to render a pdf out of your view, include this
+    format.pdf { render :pdf => "pdf_name" }
+ 
+or this
+    render :pdf => "pdf_name", :template => "your_template"
+
+in your controller.
+
+And match the action with the appropriate address, so go to routes.rb
+and include something like
+  match "/yourpdfile(.:format)", :to => "your_controller#your_action"
+
+Check out test/dummy/ for a live example of this
+
 
 This project rocks and uses MIT-LICENSE.
