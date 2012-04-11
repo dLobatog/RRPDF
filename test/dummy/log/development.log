@@ -1,0 +1,8 @@
+
+
+Started GET "/another.pdf" for 127.0.0.1 at 2012-04-10 19:08:38 -0700
+  Processing by HomeController#another as PDF
+Rendered home/index.pdf.erb (0.3ms)
+Rendered text template (0.0ms)
+Sent data contents.pdf (5.8ms)
+Completed 200 OK in 102ms (Views: 101.3ms | ActiveRecord: 0.0ms)
